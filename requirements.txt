@@ -1,7 +1,6 @@
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: win-64
-altair=5.1.2=pypi_0
 anyio=4.0.0=pypi_0
 argon2-cffi=23.1.0=pypi_0
 argon2-cffi-bindings=21.2.0=pypi_0
@@ -80,7 +79,6 @@ pandas=2.1.3=pypi_0
 pandocfilters=1.5.0=pypi_0
 parso=0.8.3=pypi_0
 pillow=10.1.0=pypi_0
-pip=23.3=py310haa95532_0
 platformdirs=4.0.0=pypi_0
 prometheus-client=0.18.0=pypi_0
 prompt-toolkit=3.0.41=pypi_0
