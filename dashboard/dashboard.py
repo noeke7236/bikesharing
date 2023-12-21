@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Memuat data
-rent_data = pd.read_csv('~/dashboard/main_data.csv')
+rent_data = pd.read_csv('/mount/src/bikesharing/dashboard/main_data.csv')
 
 # Proses clean data
 #Menyalin DataFrame untuk menghindari modifikasi data asli
