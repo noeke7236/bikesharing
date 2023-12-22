@@ -391,10 +391,10 @@ plt.close(fig2)
 st.header('Kesimpulan', divider='rainbow')
 st.write(
     """
-1. Berapa nilai maksimum, minimum, mean, median dan standar deviasi untuk suhu (temperature), kelembaban (humidity), kecepatan angin (windspeed) dan jumlah sepeda yang disewa (count) berdasarkan musim?
+1. Berapa nilai maksimum, minimum, mean, median dan standar deviasi untuk suhu (temperature), kelembaban (humidity), kecepatan angin (windspeed) dan jumlah sepeda yang disewa (count) berdasarkan musim?  
 Kesimpulan : Berdasarkan statistik ini, bisa dilihat nilai rata-rata jumlah sepeda yang disewa per hari berdasarkan musim. Nilai rata-rata tertinggi jumlah sepeda yang disewa pada musim Fall (dengan nilai rata-rata temperature : 28,9 , humidity : 63,5 dan windspeed : 11,5). Sedangkan nilai rata-rata terendah jumlah sepeda yang disewa pada musim Spring (dengan nilai rata-rata temperature : 12,2 , humidity : 58,3 dan windspeed : 14,4)
 
-2. Berapa nilai maksimum, minimum, mean, median dan standar deviasi untuk suhu (temperature), kelembaban (humidity), kecepatan angin (windspeed) dan jumlah sepeda yang disewa (count) berdasarkan bulan?
+2. Berapa nilai maksimum, minimum, mean, median dan standar deviasi untuk suhu (temperature), kelembaban (humidity), kecepatan angin (windspeed) dan jumlah sepeda yang disewa (count) berdasarkan bulan?  
 Kesimpulan : Berdasarkan statistik ini, bisa dilihat nilai rata-rata jumlah sepeda yang disewa per hari berdasarkan bulan. Nilai rata-rata tertinggi jumlah sepeda yang disewa pada bulan Juni (dengan nilai rata-rata temperature : 28 humidity : 57,6 dan windspeed : 12,4). Sedangkan nilai rata-rata terendah jumlah sepeda yang disewa pada bulan Januari (dengan nilai rata-rata temperature : 9,7 , humidity : 58,6 dan windspeed : 13,8)
 
 3. Bagaimana perubahan suhu (temperature), kelembaban (humidity) dan kecepatan angin (windspeed) di sepanjang musim? 
