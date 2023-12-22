@@ -417,7 +417,7 @@ Kesimpulan : Berdasarkan grafik tersebut, dapat ditarik beberapa kesimpulan yait
 Jumlah sepeda yang disewa meningkat secara signifikan dari tahun 2011 ke tahun 2012. Hal ini menunjukkan bahwa semakin banyak orang yang menggunakan sepeda sebagai alat transportasi atau rekreasi.
 Peningkatan jumlah sepeda yang disewa paling signifikan terjadi pada bulan-bulan musim panas (Juni-Agustus). Hal ini menunjukkan bahwa orang-orang lebih cenderung bersepeda pada cuaca yang hangat dan cerah.
 
-8. Bagaimana trend penyewaan sepeda berdasarkan hari dalam 1 pekan?
+8. Bagaimana trend penyewaan sepeda berdasarkan hari dalam 1 pekan?  
 Kesimpulan : Jumlah sepeda yang disewa pada hari Sabtu (Saturday) dan Minggu (Sunday) lebih tinggi daripada hari-hari lainnya. Hal ini terlihat dari posisi median dan batas atas boxplot pada hari Sabtu (Saturday) dan Minggu (Sunday) yang berada di atas batas atas boxplot pada hari-hari lainnya. Karena pada hari Sabtu (Saturday) dan Minggu (Sunday), orang-orang cenderung memiliki lebih banyak waktu luang sehingga lebih banyak acara atau kegiatan yang dapat dilakukan dengan sepeda. Cuaca cenderung lebih cerah sangat mendukung kegiatan bersepeda.
 
 9. Bagaimana trend penyewaan sepeda berdasarkan hari kerja dan hari libur di tahun 2011?
