@@ -4,8 +4,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+sns.set_theme(style="darkgrid")
+
 # Memuat data
-rent_data = pd.read_csv('/mount/src/bikesharing/dashboard/main_data.csv')
+rent_data = pd.read_csv('C:/Users/rmaqc/Documents//submission/dashboard/main_data.csv')
 
 # Proses clean data
 #Menyalin DataFrame untuk menghindari modifikasi data asli
@@ -62,9 +64,9 @@ season_table = rent_data_modified.groupby(['season']).agg({
 }).reset_index()
 
 # Menampilkan tabel perhitungan berdasarkan musim
-st.subheader('Tabel Perhitungan berdasarkan musim')
+st.subheader('Tabel perhitungan berdasarkan musim')
 st.write("""
-    Berapa nilai maksimum, minimun, mean, median dan standar deviasi 
+    Berapa nilai maksimum, minimum, mean, median dan standar deviasi 
     untuk suhu (temperature), kelembaban (humidity), kecepatan angin (windspeed) 
     dan jumlah sepeda yang disewa (count) berdasarkan musim?
     """)
@@ -81,9 +83,9 @@ month_table = rent_data_modified.groupby(['mnth','month']).agg({
 }).reset_index()
 
 # Menampilkan tabel perhitungan berdasarkan bulan
-st.subheader('Tabel Perhitungan berdasarkan bulan')
+st.subheader('Tabel perhitungan berdasarkan bulan')
 st.write("""
-    Berapa nilai maksimum, minimun, mean, median dan standar deviasi 
+    Berapa nilai maksimum, minimum, mean, median dan standar deviasi 
     untuk suhu (temperature), kelembaban (humidity), kecepatan angin (windspeed) 
     dan jumlah sepeda yang disewa (count) berdasarkan bulan?
     """)
@@ -91,7 +93,7 @@ st.table(month_table)
 ##
 
 ## Histogram
-st.subheader('1. Parameter Cuaca dengan Musim')
+st.subheader('1. Parameter cuaca dengan musim')
 st.write(
     """
     Bagaimana perubahan suhu (temperature), kelembaban (humidity) 
@@ -115,11 +117,11 @@ show_histogram(rent_data_modified, 'humidity', 'Histogram Kelembaban (Humidity)'
 # Menampilkan histogram windspeed
 show_histogram(rent_data_modified, 'windspeed', 'Histogram Kecepatan Angin (Windspeed)','lightskyblue')
 
-st.subheader('2. Parameter Cuaca berdasarkan Bulan')
+st.subheader('2. Parameter cuaca berdasarkan bulan')
 st.write(
     """
-    Berapa nilai rata-rata suhu (temperature), kelembaban (humidity) kecepatan angin (windspeed) 
-    dan jumlah sepeda yang disewa (rent) dalam satu bulan?
+   Berapa nilai rata-rata suhu (temperature), kelembaban (humidity), kecepatan angin (windspeed) 
+   dan jumlah sepeda yang disewa (rent) berdasarkan bulan?
     """
 )
 
@@ -132,8 +134,6 @@ mean_month = rent_data_modified.groupby(by=["mnth","month"]).agg({
     "count": "mean"
 }).reset_index()
 
-
-sns.set_theme(style="darkgrid")
 fig, ax = plt.subplots(2, 2, figsize=(18, 12))
 
 # Barplot Humidity
@@ -169,11 +169,11 @@ plt.close()
 ##
 
 ## Scatter plot
-st.subheader('3. Korelasi Parameter Cuaca dengan Pengguna (Users)')
+st.subheader('3. Korelasi parameter cuaca dengan pengguna (users)')
 st.write(
     """
     Apakah suhu (temperature), kelembaban (humidity) dan kecepatan angin (windspeed) 
-    berkaitan erat dengan pengguna sewa sepeda (user casual dan user registered)?
+    berkaitan erat dengan pengguna (user casual dan user registered)?
     """
 )
 
@@ -387,3 +387,58 @@ ax2.set_title("Pie chart sepeda yang disewa berdasarkan hari kerja atau hari lib
 st.pyplot(fig2)
 plt.close(fig2)
 ##
+
+st.header('Kesimpulan', divider='rainbow')
+st.write(
+    """
+1. Berapa nilai maksimum, minimum, mean, median dan standar deviasi untuk suhu (temperature), kelembaban (humidity), kecepatan angin (windspeed) dan jumlah sepeda yang disewa (count) berdasarkan musim?
+Kesimpulan : Berdasarkan statistik ini, bisa dilihat nilai rata-rata jumlah sepeda yang disewa per hari berdasarkan musim. Nilai rata-rata tertinggi jumlah sepeda yang disewa pada musim Fall (dengan nilai rata-rata temperature : 28,9 , humidity : 63,5 dan windspeed : 11,5). Sedangkan nilai rata-rata terendah jumlah sepeda yang disewa pada musim Spring (dengan nilai rata-rata temperature : 12,2 , humidity : 58,3 dan windspeed : 14,4)
+
+2. Berapa nilai maksimum, minimum, mean, median dan standar deviasi untuk suhu (temperature), kelembaban (humidity), kecepatan angin (windspeed) dan jumlah sepeda yang disewa (count) berdasarkan bulan?
+Kesimpulan : Berdasarkan statistik ini, bisa dilihat nilai rata-rata jumlah sepeda yang disewa per hari berdasarkan bulan. Nilai rata-rata tertinggi jumlah sepeda yang disewa pada bulan Juni (dengan nilai rata-rata temperature : 28 humidity : 57,6 dan windspeed : 12,4). Sedangkan nilai rata-rata terendah jumlah sepeda yang disewa pada bulan Januari (dengan nilai rata-rata temperature : 9,7 , humidity : 58,6 dan windspeed : 13,8)
+
+3. Bagaimana perubahan suhu (temperature), kelembaban (humidity) dan kecepatan angin (windspeed) di sepanjang musim? 
+Kesimpulan : Pada musim summer, suhu udara yang hangat, kecepatan angin yang sedang, dan kelembaban yang rendah membuat bersepeda menjadi lebih nyaman dan menyenangkan. Hal ini karena suhu udara yang hangat akan membuat tubuh menjadi lebih rileks, kecepatan angin yang sedang tidak akan membuat sepeda menjadi terlalu sulit dikendarai, dan kelembaban yang rendah akan membuat tubuh tidak merasa lembab.
+Pada musim spring dan fall, suhu udara yang tidak terlalu panas atau dingin, kecepatan angin yang sedang, dan kelembaban yang sedang juga merupakan kondisi yang baik untuk bersepeda.
+Pada musim winter, suhu udara yang dingin, kecepatan angin yang kencang, dan kelembaban yang tinggi dapat membuat bersepeda menjadi tidak nyaman dan berbahaya. Hal ini karena suhu udara yang dingin dapat membuat tubuh menjadi kaku dan rentan mengalami hipotermia, kecepatan angin yang kencang dapat membuat sepeda menjadi sulit dikendarai dan meningkatkan risiko kecelakaan, dan kelembaban yang tinggi dapat membuat tubuh merasa lembab.
+Berdasarkan hal tersebut, musim summer adalah musim yang paling direkomendasikan untuk bersepeda dengan parameter suhu, kecepatan angin, dan kelembaban. Musim spring dan fall juga merupakan musim yang cukup baik untuk bersepeda, tetapi dengan catatan bahwa kecepatan angin tidak terlalu kencang dan kelembaban tidak terlalu tinggi. Musim winter adalah musim yang paling tidak direkomendasikan untuk bersepeda, kecuali jika cuaca sangat cerah, kecepatan angin tidak terlalu kencang, dan kelembaban tidak terlalu tinggi.
+
+4. Berapa nilai rata-rata suhu (temperature), kelembaban (humidity) kecepatan angin (windspeed) dan jumlah sepeda yang disewa (rent) berdasarkan bulan?
+Kesimpulan : Berdasarkan grafik tersebut maka dapat disimpulkan di bulan Juni - Agustus adalah kondisi ideal untuk menyewa sepeda. Jumlah total penyewaan sepeda meningkat seiring dengan meningkatnya suhu. Untuk kelembaban (humidity) dan kecepatan angin (windspeed) tidak mempengaruhi intensitas penyewaan sepeda.
+
+5. Apakah suhu (temperature), kelembaban (humidity) dan kecepatan angin (windspeed) berkaitan erat dengan pengguna (user casual dan user registered)? 
+Kesimpulan : Seperti yang dapat kita lihat pada plot, terdapat hubungan antara pengguna (user casual dan user registered) dengan suhu (temperature). Jumlah pengguna (user casual dan user registered) sangat bergantung terhadap suhu. Ketika nilai suhu naik, maka jumlah penyewaan sepeda juga meningkat. Selain itu, kita juga dapat melihat bahwa pengguna (user registerd) menyewa lebih banyak sepeda daripada pengguna (user casual). Untuk kelembaban (humidity) dan kecepatan angin (windspeed) tidak mempengaruhi intensitas penyewaan sepeda.
+
+6. Apakah kondisi cuaca berpengaruh dengan jumlah sepeda yang disewa? 
+Kesimpulan : Jumlah sepeda yang disewa pada cuaca yang baik (good) lebih tinggi. Cuaca yang baik (good) merupakan kondisi yang baik untuk penyewaan sepeda secara umum. Pada cuaca baik (good), orang-orang cenderung merasa lebih nyaman dan aman untuk bersepeda. Situasi cuaca yang sangat buruk (worse), baik pengguna (user registered) maupun pengguna (user casual) tidak ada yang menyewa sepeda.
+
+7. Bagaimana statistik jumlah sepeda yang disewa berdasarkan tahun (2011 dan 2012) dan bulan? 
+Kesimpulan : Berdasarkan grafik tersebut, dapat ditarik beberapa kesimpulan yaitu
+Jumlah sepeda yang disewa meningkat secara signifikan dari tahun 2011 ke tahun 2012. Hal ini menunjukkan bahwa semakin banyak orang yang menggunakan sepeda sebagai alat transportasi atau rekreasi.
+Peningkatan jumlah sepeda yang disewa paling signifikan terjadi pada bulan-bulan musim panas (Juni-Agustus). Hal ini menunjukkan bahwa orang-orang lebih cenderung bersepeda pada cuaca yang hangat dan cerah.
+
+8. Bagaimana trend penyewaan sepeda berdasarkan hari dalam 1 pekan?
+Kesimpulan : Jumlah sepeda yang disewa pada hari Sabtu (Saturday) dan Minggu (Sunday) lebih tinggi daripada hari-hari lainnya. Hal ini terlihat dari posisi median dan batas atas boxplot pada hari Sabtu (Saturday) dan Minggu (Sunday) yang berada di atas batas atas boxplot pada hari-hari lainnya. Karena pada hari Sabtu (Saturday) dan Minggu (Sunday), orang-orang cenderung memiliki lebih banyak waktu luang sehingga lebih banyak acara atau kegiatan yang dapat dilakukan dengan sepeda. Cuaca cenderung lebih cerah sangat mendukung kegiatan bersepeda.
+
+9. Bagaimana trend penyewaan sepeda berdasarkan hari kerja dan hari libur di tahun 2011?
+Kesimpulan : Hari kerja adalah hari dengan jumlah penyewaan sepeda terbanyak, yaitu 68,9%.
+Hari libur adalah hari dengan jumlah penyewaan sepeda paling sedikit, yaitu 2,4%.
+Hari sabtu dan minggu adalah hari dengan jumlah penyewaan sepeda yang cukup tinggi, yaitu 28,7%.
+Hari kerja adalah hari ketika orang-orang cenderung bekerja atau sekolah. Hal ini menyebabkan mereka memiliki lebih sedikit waktu luang untuk bersepeda.
+
+10. Bagaimana trend penyewaan sepeda berdasarkan hari kerja dan hari libur di tahun 2012?
+Kesimpulan : Hari kerja adalah hari dengan jumlah penyewaan sepeda terbanyak, yaitu 70,1%.
+Hari libur adalah hari dengan jumlah penyewaan sepeda paling sedikit, yaitu 2,4%.
+Hari sabtu dan minggu adalah hari dengan jumlah penyewaan sepeda yang cukup tinggi, yaitu 27,6%.
+Terjadi peningkatan secara signifikan di hari kerja dari tahun 2011 ke tahun 2012.
+    """
+)
+
+st.subheader('Pembuat:')
+st.write(
+    """
+    - Nama : Ponco Nugrah Wibowo
+    - Email : noeke7236@gmail.com
+    - Id Dicoding : noeke7236
+    """
+)
