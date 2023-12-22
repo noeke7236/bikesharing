@@ -397,19 +397,19 @@ Kesimpulan : Berdasarkan statistik ini, bisa dilihat nilai rata-rata jumlah sepe
 2. Berapa nilai maksimum, minimum, mean, median dan standar deviasi untuk suhu (temperature), kelembaban (humidity), kecepatan angin (windspeed) dan jumlah sepeda yang disewa (count) berdasarkan bulan?  
 Kesimpulan : Berdasarkan statistik ini, bisa dilihat nilai rata-rata jumlah sepeda yang disewa per hari berdasarkan bulan. Nilai rata-rata tertinggi jumlah sepeda yang disewa pada bulan Juni (dengan nilai rata-rata temperature : 28 humidity : 57,6 dan windspeed : 12,4). Sedangkan nilai rata-rata terendah jumlah sepeda yang disewa pada bulan Januari (dengan nilai rata-rata temperature : 9,7 , humidity : 58,6 dan windspeed : 13,8)
 
-3. Bagaimana perubahan suhu (temperature), kelembaban (humidity) dan kecepatan angin (windspeed) di sepanjang musim? 
+3. Bagaimana perubahan suhu (temperature), kelembaban (humidity) dan kecepatan angin (windspeed) di sepanjang musim?  
 Kesimpulan : Pada musim summer, suhu udara yang hangat, kecepatan angin yang sedang, dan kelembaban yang rendah membuat bersepeda menjadi lebih nyaman dan menyenangkan. Hal ini karena suhu udara yang hangat akan membuat tubuh menjadi lebih rileks, kecepatan angin yang sedang tidak akan membuat sepeda menjadi terlalu sulit dikendarai, dan kelembaban yang rendah akan membuat tubuh tidak merasa lembab.
 Pada musim spring dan fall, suhu udara yang tidak terlalu panas atau dingin, kecepatan angin yang sedang, dan kelembaban yang sedang juga merupakan kondisi yang baik untuk bersepeda.
 Pada musim winter, suhu udara yang dingin, kecepatan angin yang kencang, dan kelembaban yang tinggi dapat membuat bersepeda menjadi tidak nyaman dan berbahaya. Hal ini karena suhu udara yang dingin dapat membuat tubuh menjadi kaku dan rentan mengalami hipotermia, kecepatan angin yang kencang dapat membuat sepeda menjadi sulit dikendarai dan meningkatkan risiko kecelakaan, dan kelembaban yang tinggi dapat membuat tubuh merasa lembab.
 Berdasarkan hal tersebut, musim summer adalah musim yang paling direkomendasikan untuk bersepeda dengan parameter suhu, kecepatan angin, dan kelembaban. Musim spring dan fall juga merupakan musim yang cukup baik untuk bersepeda, tetapi dengan catatan bahwa kecepatan angin tidak terlalu kencang dan kelembaban tidak terlalu tinggi. Musim winter adalah musim yang paling tidak direkomendasikan untuk bersepeda, kecuali jika cuaca sangat cerah, kecepatan angin tidak terlalu kencang, dan kelembaban tidak terlalu tinggi.
 
-4. Berapa nilai rata-rata suhu (temperature), kelembaban (humidity) kecepatan angin (windspeed) dan jumlah sepeda yang disewa (count) berdasarkan bulan?
+4. Berapa nilai rata-rata suhu (temperature), kelembaban (humidity) kecepatan angin (windspeed) dan jumlah sepeda yang disewa (count) berdasarkan bulan?  
 Kesimpulan : Berdasarkan grafik tersebut maka dapat disimpulkan di bulan Juni - Agustus adalah kondisi ideal untuk menyewa sepeda. Jumlah total penyewaan sepeda meningkat seiring dengan meningkatnya suhu. Untuk kelembaban (humidity) dan kecepatan angin (windspeed) tidak mempengaruhi intensitas penyewaan sepeda.
 
-5. Apakah suhu (temperature), kelembaban (humidity) dan kecepatan angin (windspeed) berkaitan erat dengan pengguna (user casual dan user registered)? 
+5. Apakah suhu (temperature), kelembaban (humidity) dan kecepatan angin (windspeed) berkaitan erat dengan pengguna (user casual dan user registered)?  
 Kesimpulan : Seperti yang dapat kita lihat pada plot, terdapat hubungan antara pengguna (user casual dan user registered) dengan suhu (temperature). Jumlah pengguna (user casual dan user registered) sangat bergantung terhadap suhu. Ketika nilai suhu naik, maka jumlah penyewaan sepeda juga meningkat. Selain itu, kita juga dapat melihat bahwa pengguna (user registerd) menyewa lebih banyak sepeda daripada pengguna (user casual). Untuk kelembaban (humidity) dan kecepatan angin (windspeed) tidak mempengaruhi intensitas penyewaan sepeda.
 
-6. Apakah kondisi cuaca berpengaruh dengan jumlah sepeda yang disewa? 
+6. Apakah kondisi cuaca berpengaruh dengan jumlah sepeda yang disewa?  
 Kesimpulan : Jumlah sepeda yang disewa pada cuaca yang baik (good) lebih tinggi. Cuaca yang baik (good) merupakan kondisi yang baik untuk penyewaan sepeda secara umum. Pada cuaca baik (good), orang-orang cenderung merasa lebih nyaman dan aman untuk bersepeda. Situasi cuaca yang sangat buruk (worse), baik pengguna (user registered) maupun pengguna (user casual) tidak ada yang menyewa sepeda.
 
 7. Bagaimana statistik jumlah sepeda yang disewa berdasarkan tahun (2011 dan 2012) dan bulan? 
