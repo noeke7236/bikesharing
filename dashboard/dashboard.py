@@ -121,7 +121,7 @@ st.subheader('2. Parameter cuaca berdasarkan bulan')
 st.write(
     """
    Berapa nilai rata-rata suhu (temperature), kelembaban (humidity), kecepatan angin (windspeed) 
-   dan jumlah sepeda yang disewa (rent) berdasarkan bulan?
+   dan jumlah sepeda yang disewa (Count) berdasarkan bulan?
     """
 )
 
@@ -154,7 +154,7 @@ ax[0, 1].tick_params(axis='x', labelsize=12)
 sns.barplot(y="count", x="month", data=mean_month.sort_values(by="mnth", ascending=True), color="green", ax=ax[1, 0])
 ax[1, 0].set_ylabel(None)
 ax[1, 0].set_xlabel(None)
-ax[1, 0].set_title('Rata-rata sewa/Rent', loc="center", fontsize=15)
+ax[1, 0].set_title('Rata-rata Sewa/Count', loc="center", fontsize=15)
 ax[1, 0].tick_params(axis='x', labelsize=12)
 
 # Barplot Windspeed
