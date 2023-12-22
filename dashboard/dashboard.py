@@ -7,7 +7,6 @@ import seaborn as sns
 sns.set_theme(style="darkgrid")
 
 # Memuat data
-#rent_data = pd.read_csv('/mount/src/bikesharing/dashboard/main_data.csv')
 rent_data = pd.read_csv('https://raw.githubusercontent.com/noeke7236/bikesharing/main/dashboard/main_data.csv')
 #rent_data = pd.read_csv('main_data.csv') for local only
 
