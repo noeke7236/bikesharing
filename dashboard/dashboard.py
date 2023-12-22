@@ -121,7 +121,7 @@ st.subheader('2. Parameter cuaca berdasarkan bulan')
 st.write(
     """
    Berapa nilai rata-rata suhu (temperature), kelembaban (humidity), kecepatan angin (windspeed) 
-   dan jumlah sepeda yang disewa (Count) berdasarkan bulan?
+   dan jumlah sepeda yang disewa (count) berdasarkan bulan?
     """
 )
 
@@ -403,7 +403,7 @@ Pada musim spring dan fall, suhu udara yang tidak terlalu panas atau dingin, kec
 Pada musim winter, suhu udara yang dingin, kecepatan angin yang kencang, dan kelembaban yang tinggi dapat membuat bersepeda menjadi tidak nyaman dan berbahaya. Hal ini karena suhu udara yang dingin dapat membuat tubuh menjadi kaku dan rentan mengalami hipotermia, kecepatan angin yang kencang dapat membuat sepeda menjadi sulit dikendarai dan meningkatkan risiko kecelakaan, dan kelembaban yang tinggi dapat membuat tubuh merasa lembab.
 Berdasarkan hal tersebut, musim summer adalah musim yang paling direkomendasikan untuk bersepeda dengan parameter suhu, kecepatan angin, dan kelembaban. Musim spring dan fall juga merupakan musim yang cukup baik untuk bersepeda, tetapi dengan catatan bahwa kecepatan angin tidak terlalu kencang dan kelembaban tidak terlalu tinggi. Musim winter adalah musim yang paling tidak direkomendasikan untuk bersepeda, kecuali jika cuaca sangat cerah, kecepatan angin tidak terlalu kencang, dan kelembaban tidak terlalu tinggi.
 
-4. Berapa nilai rata-rata suhu (temperature), kelembaban (humidity) kecepatan angin (windspeed) dan jumlah sepeda yang disewa (rent) berdasarkan bulan?
+4. Berapa nilai rata-rata suhu (temperature), kelembaban (humidity) kecepatan angin (windspeed) dan jumlah sepeda yang disewa (count) berdasarkan bulan?
 Kesimpulan : Berdasarkan grafik tersebut maka dapat disimpulkan di bulan Juni - Agustus adalah kondisi ideal untuk menyewa sepeda. Jumlah total penyewaan sepeda meningkat seiring dengan meningkatnya suhu. Untuk kelembaban (humidity) dan kecepatan angin (windspeed) tidak mempengaruhi intensitas penyewaan sepeda.
 
 5. Apakah suhu (temperature), kelembaban (humidity) dan kecepatan angin (windspeed) berkaitan erat dengan pengguna (user casual dan user registered)? 
